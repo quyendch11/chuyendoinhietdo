@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>bảng chuyển đổi nhiệt độ</h1>
+<p>nhập giá trị độ F để chuyển đổi sang độ C</p><br>
+<p>độ F <input type="number" oninput="chuyendoi(this.value)" onchange="chuyendoi(this.value)"/></p><br>
+<p>giá trị độ C là : </p>
+<p id="ketqua"></p>
+<script>
+function chuyendoi(giatri){
+    giatri = parseFloat(giatri);
+    document.getElementById("ketqua").innerHTML=(giatri-32)/1.8;
+}
+</script>
+</body>
+</html>
